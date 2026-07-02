@@ -31,7 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             {children}
           </AuthProvider>
         </ThemeProvider>
-      </body>
+      <Suspense fallback={null}><PortfolioBar /></Suspense></body>
     </html>
   )
 }
